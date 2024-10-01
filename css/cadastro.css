@@ -9,12 +9,13 @@ body {
 } 
 
 .container {
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw; 
+    margin-left: 600px;
+ margin-top: 150px;
+
 }
+
 
 .passos {  
     display: flex;  
@@ -149,9 +150,9 @@ body {
 
 .inputbox { 
     position: relative; 
-    margin: 80px 0; /* Margem reduzida para telas menores */
-    width: 500px; /* Largura total em telas pequenas */
-    max-width: 850px; /* Mantém a largura máxima para telas grandes */
+    margin: 80px 0; 
+    width: 500px; 
+    max-width: 850px; 
     color: var(--vermelho); 
     right: 980px; 
 } 
@@ -179,7 +180,7 @@ body {
 } 
 
 button { 
-    width: 265px; /* Largura total do botão */
+    width: 265px;
     height: 50px; 
     border-radius: 40px; 
     font-family: var(--titulo); 
@@ -190,7 +191,7 @@ button {
     border: 2px solid var(--vermelho); 
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1); 
     cursor: pointer;
-    margin-left: -980px; /* Move o botão para a esquerda */
+    margin-left: -980px; 
 } 
 
 button:hover { 
@@ -205,58 +206,155 @@ button:hover {
 
 .desc-container { 
     position: fixed; 
-    width: 500px; /* Largura total para responsividade */
-    max-width: 600px; /* Mantém a largura máxima */
-    height: 900px; /* Permite altura flexível */
-    right: 12%;  
+    width: 500px; 
+    max-width: 600px; 
+    height: 900px; 
+    right: 10%;  
     top: 10px; 
     background-color: var(--vermelho);  
-    padding: 40px; /* Adiciona preenchimento para estética */
-    box-sizing: border-box; /* Inclui preenchimento na largura/altura */
-} 
+    padding: 40px;
+    box-sizing: border-box; 
+}
 
 .desc-container h1 { 
-    font-size: 32px; /* Ajustado para melhor responsividade */
+    font-size: 32px; 
     font-weight: 900; 
     color: var(--branco); 
     text-align: center;
 } 
 
 .desc-container p { 
-    font-size: 25px; /* Ajustado para melhor legibilidade */
+    font-size: 25px; 
     color: var(--branco); 
     text-align: center; 
-    margin: 20px; /* Ajusta a margem */
+    margin: 20px; 
 } 
 
 
 
 .desc-container img {
-    width: 100%; /* Torna a imagem responsiva */
-    height: auto; /* Mantém a proporção */
-    max-height: 500px; /* Limita a altura */
-    object-fit: cover; /* Cobre a área */
+    width: 100%;
+    height: auto; 
+    max-height: 500px; 
+    object-fit: cover; 
 }
 
-/* Media Queries para maior responsividade */
 
-@media (max-width: 768px) {
-    .passos { 
-        flex-direction: column; 
-        left: 0; /* Centraliza os passos */
-        align-items: center; 
+
+@media screen and (max-width: 1300px) {
+
+    .container {
+        justify-content: center;
+        align-items: center;
+        margin-left: 270px;
+        margin-top: 150px;
+    
     }
-
-    .passo, .passo2 { 
-        margin: 0 20px; 
-    }
-
-    button { 
-        font-size: 24px; 
-    }
-
     .desc-container { 
-        width: 95%; 
-        right: 2.5%; 
+        position: fixed; 
+        width: 350px; 
+        height: 650px; 
+        right: 10%;  
+        top: 60px; 
+        background-color: var(--vermelho);  
+        padding: 20px;
+        box-sizing: border-box; 
     }
+    
+.desc-container h1 { 
+    font-size: 20px; 
+    font-weight: 900; 
+    color: var(--branco); 
+    text-align: center;
+    margin-bottom: 50px;
+} 
+
+.desc-container p { 
+    font-size: 15px; 
+    color: var(--branco); 
+    text-align: center;  
+} 
+
+
+.desc-container img {
+    width: 100%;
+    height: auto; 
+    max-height: 500px; 
+    object-fit: cover; 
 }
+
+
+    .passos {
+display: none;
+
+    }
+
+    
+.forms-section { 
+    display: flex; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+} 
+ 
+.forms { 
+
+    flex-direction: column; 
+    align-items: center;
+
+} 
+    .inputbox { 
+        position: relative; 
+        margin: 80px 0; 
+        color: var(--vermelho); 
+        top: -40px;
+        left: -420px;
+    } 
+
+    
+    .inputbox label { 
+        position: absolute; 
+        transform: translateY(-200%); 
+        font-size: 15px; 
+        pointer-events: none; 
+    } 
+    
+    .inputbox input { 
+        width: 400px; /* Largura total */
+        height: 30px; 
+        outline: none; 
+        font-size: 18px; 
+        border-bottom: 3px solid var(--vermelho);  
+        border: 2px solid var(--branco);  
+        background: var(--cinza); 
+        padding-left: 20px; 
+        padding-top: 10px; 
+    } 
+
+    
+button { 
+    height: 45px; 
+    width: 150px;
+    border-radius: 40px; 
+    font-family: var(--titulo); 
+    color: var(--vermelho); 
+    font-size: 20px; 
+    font-weight: 800; 
+    background-color: transparent; 
+    border: 2px solid var(--vermelho); 
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1); 
+    cursor: pointer;
+    margin-left: -425px;
+
+    
+  
+} 
+
+button:hover { 
+    color: var(--branco); 
+    background-color: var(--vermelho); 
+    transform: translateY(-0.125em); 
+} 
+    
+}
+
