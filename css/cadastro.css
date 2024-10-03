@@ -255,7 +255,7 @@ button:hover {
         width: 350px; 
         height: 650px; 
         right: 10%;  
-        top: 60px; 
+        top: 125px; 
         background-color: var(--vermelho);  
         padding: 20px;
         box-sizing: border-box; 
@@ -345,16 +345,235 @@ button {
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1); 
     cursor: pointer;
     margin-left: -425px;
+}
 
-    
-  
-} 
-
-button:hover { 
-    color: var(--branco); 
-    background-color: var(--vermelho); 
-    transform: translateY(-0.125em); 
-} 
     
 }
 
+@media screen and (max-width: 985px) {
+
+    .desc-container{
+        display: none;
+    }
+
+    .container {
+        margin-left: 0px;
+        margin-top: 0px;
+        text-align: center;
+    
+    }
+
+    .forms{
+        width: 600px;
+        height: 700px;
+        text-align: center;
+        position: absolute; top: 50%; left: 50%; 
+        transform: translate(-50%, -50%)
+
+    }
+    .inputbox { 
+        position: relative; 
+        margin-bottom: 80px;
+        color: var(--vermelho); 
+        top: 20px;
+        left: 35px;
+    } 
+
+    
+    .inputbox input { 
+        width: 450px; /* Largura total */
+        height: 33px; 
+        outline: none; 
+        font-size: 22px; 
+        border-bottom: 3px solid var(--vermelho);  
+        border: 2px solid var(--branco);  
+        background: var(--cinza); 
+        padding-left: 90px; 
+        padding-top: 10px; 
+    } 
+
+    
+button { 
+    height: 55px; 
+    width: 180px;
+    border-radius: 40px; 
+    font-family: var(--titulo); 
+    color: var(--vermelho); 
+    font-size: 25px; 
+    font-weight: 800; 
+    background-color: transparent; 
+    border: 2px solid var(--vermelho); 
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1); 
+    cursor: pointer;
+    margin-left: -335px;
+}
+
+.container p {
+    margin-left: -300px;
+
+}
+
+.inputbox label { 
+    position: absolute; 
+    top: 50%; 
+    left: 10px; 
+    transform: translateY(-200%); 
+    font-size: 19px; 
+    font-weight: 600; 
+    pointer-events: none; 
+} 
+
+
+}
+@media screen and (max-width: 600px) {
+
+    .desc-container{
+        display: none;
+    }
+
+    .container {
+        margin-left: 0px;
+        margin-top: 0px;
+        text-align: center;
+    
+    }
+
+    .forms{
+        width: 600px;
+        height: 700px;
+        text-align: center;
+        position: absolute; top: 50%; left: 50%; 
+        transform: translate(-50%, -50%)
+
+    }
+    .inputbox { 
+        position: relative; 
+        margin-bottom: 80px;
+        color: var(--vermelho); 
+        top: 20px;
+        left: 35px;
+    } 
+
+    
+    .inputbox input { 
+        width: 320px; /* Largura total */
+        height: 30px; 
+        outline: none; 
+        font-size: 22px; 
+        border-bottom: 3px solid var(--vermelho);  
+        border: 2px solid var(--branco);  
+        background: var(--cinza); 
+        padding-left: 90px; 
+        padding-top: 10px; 
+    } 
+
+    
+button { 
+    height: 46px; 
+    width: 140px;
+    border-radius: 40px; 
+    font-family: var(--titulo); 
+    color: var(--vermelho); 
+    font-size: 20px; 
+    font-weight: 800; 
+    background-color: transparent; 
+    border: 2px solid var(--vermelho); 
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1); 
+    cursor: pointer;
+    margin-left: -295px;
+}
+
+.container p {
+    margin-left: -285px;
+    font-size: 12px;
+
+}
+
+.inputbox label { 
+    position: absolute; 
+    top: 50%; 
+    left: 50px; 
+    transform: translateY(-200%); 
+    font-size: 16px; 
+    font-weight: 600; 
+    pointer-events: none; 
+} 
+
+
+}
+
+@media screen and (max-width: 476px) {
+
+    .desc-container{
+        display: none;
+    }
+
+    .container {
+        margin-left: 0px;
+        margin-top: 0px;
+        text-align: center;
+    
+    }
+
+    .forms{
+        width: 600px;
+        height: 700px;
+        text-align: center;
+        position: absolute; top: 50%; left: 50%; 
+        transform: translate(-50%, -50%)
+
+    }
+    .inputbox { 
+        position: relative; 
+        margin-bottom: 80px;
+        color: var(--vermelho); 
+        top: 20px;
+        left: 35px;
+    } 
+
+    
+    .inputbox input { 
+        width: 190px; /* Largura total */
+        height: 30px; 
+        outline: none; 
+        font-size: 22px; 
+        border-bottom: 3px solid var(--vermelho);  
+        border: 2px solid var(--branco);  
+        background: var(--cinza); 
+        padding-left: 90px; 
+        padding-top: 10px; 
+    } 
+
+    
+button { 
+    height: 46px; 
+    width: 140px;
+    border-radius: 40px; 
+    font-family: var(--titulo); 
+    color: var(--vermelho); 
+    font-size: 20px; 
+    font-weight: 800; 
+    background-color: transparent; 
+    border: 2px solid var(--vermelho); 
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1); 
+    cursor: pointer;
+    margin-left: -134px;
+}
+
+.container p {
+    margin-left: -114px;
+    font-size: 12px;
+
+}
+
+.inputbox label { 
+    position: absolute; 
+    top: 50%; 
+    left: 114px; 
+    transform: translateY(-200%); 
+    font-size: 16px; 
+    font-weight: 600; 
+    pointer-events: none; 
+} 
+
+}
