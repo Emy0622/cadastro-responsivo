@@ -210,7 +210,7 @@ button:hover {
     max-width: 600px; 
     height: 900px; 
     right: 10%;  
-    top: 10px; 
+    top: 54px; 
     background-color: var(--vermelho);  
     padding: 40px;
     box-sizing: border-box; 
@@ -347,7 +347,11 @@ button {
     margin-left: -425px;
 }
 
-    
+.container p {
+    margin-left: -420px;
+    font-size: 14px;
+
+}
 }
 
 @media screen and (max-width: 985px) {
@@ -355,6 +359,28 @@ button {
     .desc-container{
         display: none;
     }
+    
+.container {
+    justify-content: center;
+    align-items: center;
+    margin-left: 600px;
+ margin-top: 150px;
+
+}
+
+
+.passos {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    margin-bottom: 30px;  
+    position: absolute; 
+    top: 80px; 
+    left: -350px; 
+    margin-left: 350px;
+    width: 100%;  
+    text-align: center;  
+}  
 
     .container {
         margin-left: 0px;
@@ -426,6 +452,10 @@ button {
 
 }
 @media screen and (max-width: 600px) {
+    .passos {  
+        display: none;
+    }  
+    
 
     .desc-container{
         display: none;
